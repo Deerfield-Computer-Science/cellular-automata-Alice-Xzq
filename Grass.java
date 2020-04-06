@@ -1,9 +1,11 @@
+import java.awt.Color;
 import java.util.ArrayList;
 
 public class Grass extends Plant {
 	
 	public Grass(Location l, World w) {
 		super(l,w);
+//		myColor = Color.green;
 		myLifeSpan = 3;
 	}
 	

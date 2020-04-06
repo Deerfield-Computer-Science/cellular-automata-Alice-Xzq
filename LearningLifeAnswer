@@ -1,0 +1,27 @@
+1, The execution starts in WorldController class. Three iterations pass in the world. 
+You can change the amount of iterations by changing the for loop's end condition in runWorld().
+You can also change the number(ms) in the pause function to increase the time in between each iteration.
+
+2, The execution starts in WorldController class. Then it goes to World class to construct a new world. 
+Then the program goes to Location and Grass class to create corresponding objects. 
+Then it draw the world and change the world (letTimePass + drawWorld) multiple times according to the for loop's condition.
+
+3, There are two ways:
+One way is to change myColor variable in Plant class, but that will change all the plant's color.
+Another way is to comment out the declaration line of myColor in Plant class and add a line with another color in Grass class.
+
+4, Each Grass will add a new grass in random location (0 to 20 for both x and y) to the creature list
+
+5, Add a 2-D boolean array to record which locations had been taken in World, write a while true loop until the random
+genarated location was not taken.
+
+6, The creatures were stored in an ArrayList of LifeForm in World and were accessed through the ArrayList
+
+7, Remove the dead creatures out of the list so they don't get drawn again.
+
+8, Creatures have a location because location is the porperty of a creature
+
+9, The world have creatures, because a world can hold a lot of creatures while one creature can't live in multiple worlds.
+
+10, You could add a move function in that creature's class and randomly add or minus one on the creature's x or y
+
